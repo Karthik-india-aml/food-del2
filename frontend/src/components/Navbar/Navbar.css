@@ -1,0 +1,157 @@
+/* Navbar container */
+.navbar {
+  width: 100%;
+  background: black;
+  color: tomato;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 30px;
+  position: relative; 
+  top: -15px;
+  left: 0;
+  z-index: 100;
+}
+
+/* Title with hover gradient effect */
+.navbar-title {
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  background-size: 300%;
+}
+
+.navbar-title:hover {
+  background-position: right center;
+}
+
+/* Menu styling */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.navbar-menu li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #ff4d4d;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-menu li a:hover::after,
+.navbar-menu li a.active::after {
+  width: 100%;
+}
+
+/* Right side icons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Sign-in button */
+.sign-in-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background: #ff1a1a;
+}
+
+/* Profile dropdown */
+.navbar-profile-wrapper {
+  position: relative;
+}
+
+.navbar-profile {
+  cursor: pointer;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.nav-profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 10px;
+  width: 150px;
+  list-style: none;
+  z-index: 200;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: white;
+}
+
+.nav-profile-dropdown li:hover {
+  background: #333;
+}
+
+.nav-profile-dropdown hr {
+  border: 0.5px solid #444;
+  margin: 6px 0;
+}
+
+/* Separator under navbar */
+.navbar-separator {
+  border: 0.5px solid #333;
+}

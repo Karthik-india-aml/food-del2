@@ -1,0 +1,87 @@
+.verify-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000; /* black background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Popup Card */
+.verify-container {
+  text-align: center;
+}
+
+.verify-container h1 {
+  color: tomato;
+  font-size: 1.8rem;
+  margin-bottom: 100px;
+}
+
+/* Popup Box */
+.verify-container {
+  text-align: center;
+}
+
+
+
+/* Wrapper box */
+.verify-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verify-container > * {
+  margin: 0;
+}
+
+.verify-container h1,
+.verify-container p {
+  display: block;
+}
+
+.verify-container {
+  position: relative;
+}
+
+.verify-container > .verify-box {
+  background: #111;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(255, 99, 71, 0.3);
+  border: 1px solid tomato;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Heading inside box */
+.verify-box h1 {
+  color: tomato;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Message inside box */
+.verify-box p {
+  font-size: 1.1rem;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+/* Success */
+.verify-box p[style*="green"] {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50 !important;
+  border: 1px solid #4caf50;
+}
+
+/* Failure */
+.verify-box p[style*="red"] {
+  background: rgba(244, 67, 54, 0.1);
+  color: #f44336 !important;
+  border: 1px solid #f44336;
+}
